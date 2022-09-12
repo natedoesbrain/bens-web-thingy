@@ -1,45 +1,139 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
 
 body{
   background-color:hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
 }
 
 .report-page{
   display: flex;
-  margin: 10rem;
-  gap: 2rem;
+  flex-wrap:wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
 }
 
+/*JEREMYS REPORT*/
+.jeremys-report{
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 0;
+  width: 16%;
+  height: 60%;
+}
+.report-main{
+  border-radius: 20px;
+  background-color: hsl(246, 80%, 60%);
+  color: white;
+  height: 68%;
+  padding: 2rem;
+}
+.report-main img{
+  border: aliceblue solid 3px;
+  border-radius: 50%;
+  height: 10vh;
+}
+.report-main p{
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+  margin: 0;
+  margin-top: 2.5rem;
+}
+.report-main h2{
+  font-weight: 300;
+  font-size: 2.5vw;
+  margin: 0;
+}
+.report-options{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  height: 32%;
+}
+.jeremys-report button{
+  background-color: transparent;
+  border: 0;
+  color: aliceblue;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  text-align: start;
+  padding:4% 2rem ;
+
+}
+
+
+/*CARDS*/
 .all-cards{
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  width: 75%;
+  gap: 1.5rem 1.5rem;
+  width: 55%;
+  height: 60%;
+  color: aliceblue;
 }
-
-.jeremys-report{
-  background-color: hsl(235, 46%, 20%);
-  width: 25%;
-  border-radius: 20px;
-}
-
 .card{
-  width: 29%;
-  height: 200px;
+  width: 28%;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
 }
-
+.card img{
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  z-index: 1;
+}
+#work{
+  background-color: hsl(15, 100%, 70%);
+}
+#play{
+  background-color: hsl(195, 74%, 62%) ;
+}
+#study{
+  background-color: hsl(348, 100%, 68%);
+}
+#exercise{
+  background-color: hsl(145, 58%, 55%);
+}
+#social{
+  background-color: hsl(264, 64%, 52%);
+}
+#self-care{
+  background-color: hsl(43, 84%, 65%);
+}
 .card-info{
   background-color: hsl(235, 46%, 20%);
-  height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 3vh 1.5vw;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  z-index: 2;
+}
+.card-info h5{
+  font-weight: 400;
+  font-size: 1vw;
+  margin: 0;
+  margin-bottom: 3vh;
+}
 
+.card-info h4{
+  font-weight: 300;
+  font-size: 4vw;
+  margin: 0;
+}
+
+.card-info p{
+  font-weight: 300;
+  font-size: 1vw;
+  margin: 0;
+  color: hsl(236, 100%, 87%);
 }
 
 
